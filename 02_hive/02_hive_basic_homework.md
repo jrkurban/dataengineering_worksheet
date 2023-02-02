@@ -47,4 +47,4 @@ tblproperties('skip.header.line.count'='1');
 
 ### A-5
 
--select * from employee where skills_score["Python"] > 70;
+- select * from employee where skills_score["Python"] > 70;
