@@ -1,0 +1,6 @@
+- https://github.com/erkansirin78/datasets/raw/master/IOT-temp.csv.zip
+
+- Yukarıdaki veri setini data-generator ile /tmp/iot-temp-input diznine generate ediniz.
+
+- Spark streaming ile bu dizni okuyarak olay zamanı baz alarak veri setine yıl, ay, haftanın günü gibi yeni nitelikler ekleyerek
+/tmp/iot-temp-output dosyasına yazınız.
