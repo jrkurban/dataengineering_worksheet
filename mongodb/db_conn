@@ -1,0 +1,6 @@
+[DB]
+user_name = myTester
+password = Ankara06
+db_ip = 127.0.0.1
+port = 27017
+auth_database = test
