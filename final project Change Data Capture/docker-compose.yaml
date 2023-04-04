@@ -19,6 +19,7 @@ services:
       - 4040:4040
       - 7077:7077
       - 8080:8080
+
       - 18080:18080
     networks:
       - vbo
@@ -34,7 +35,7 @@ services:
     depends_on:
       - spark-master
     ports:
-      - 8081-8082:8081
+      - 8181-8182:8081
     networks:
       - vbo
     command: sh spark-worker.sh
@@ -49,7 +50,7 @@ services:
     depends_on:
       - spark-master
     ports:
-      - 8084-8085:8081
+      - 8184-8185:8081
     networks:
       - vbo
     command: sh spark-worker.sh
@@ -101,6 +102,8 @@ services:
     image: quay.io/debezium/kafka:2.0
     ports:
      - 9292:9092
+    environment:
+     - ZOOKEEPER_CONNECT=zookeeper:2181
   connect:
     image: quay.io/debezium/connect:2.0
     ports:
