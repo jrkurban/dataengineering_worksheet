@@ -9,6 +9,6 @@
         "database.password": "postgres",
         "database.dbname" : "postgres",
         "topic.prefix": "dbserver1",
-        "schema.include.list": "inventory"
+        "schema.include.list": "public"
     }
 }
